@@ -13,6 +13,8 @@
 		AC78CCCA1F78B874002EE832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC78CCC91F78B874002EE832 /* Assets.xcassets */; };
 		AC78CCCD1F78B874002EE832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC78CCCB1F78B874002EE832 /* LaunchScreen.storyboard */; };
 		AC78CCD61F78B945002EE832 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78CCD51F78B945002EE832 /* FaceView.swift */; };
+		AC78CCD81F796E1A002EE832 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78CCD71F796E1A002EE832 /* FacialExpression.swift */; };
+		AC78CCDA1F796FFE002EE832 /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC78CCD91F796FFE002EE832 /* EyeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC78CCCC1F78B874002EE832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC78CCCE1F78B874002EE832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC78CCD51F78B945002EE832 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		AC78CCD71F796E1A002EE832 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		AC78CCD91F796FFE002EE832 /* EyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AC78CCC41F78B874002EE832 /* ViewController.swift */,
 				AC78CCC61F78B874002EE832 /* Main.storyboard */,
 				AC78CCD51F78B945002EE832 /* FaceView.swift */,
+				AC78CCD71F796E1A002EE832 /* FacialExpression.swift */,
+				AC78CCD91F796FFE002EE832 /* EyeView.swift */,
 			);
 			path = FaceIt;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC78CCC51F78B874002EE832 /* ViewController.swift in Sources */,
+				AC78CCD81F796E1A002EE832 /* FacialExpression.swift in Sources */,
+				AC78CCDA1F796FFE002EE832 /* EyeView.swift in Sources */,
 				AC78CCC31F78B874002EE832 /* AppDelegate.swift in Sources */,
 				AC78CCD61F78B945002EE832 /* FaceView.swift in Sources */,
 			);

@@ -34,6 +34,9 @@
                             <constraint firstItem="WWQ-fh-zUB" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="oPF-Fl-HyL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="faceView" destination="WWQ-fh-zUB" id="fSe-bU-C1S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
