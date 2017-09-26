@@ -15,7 +15,19 @@ class ViewController: UIViewController {
             let handler = #selector(FaceView.changeScale(recognizer:))
             let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
             faceView.addGestureRecognizer(pinchRecognizer)
+
+            let tapHandler = #selector(toggleEyes(byReactingTo:))
+            let tapRecognizer = UITapGestureRecognizer(target: self, action: tapHandler)
+            tapRecognizer.numberOfTapsRequired = 1
+            faceView.addGestureRecognizer(tapRecognizer)
             updateUI()
+        }
+    }
+
+    func toggleEyes(byReactingTo tapRecognizer: UITapGestureRecognizer) {
+        if tapRecognizer.state == .ended {
+            let eyes: FacialExpression.Eyes = (expression.eyes == .Closed) ? .Open : .Closed
+            expression = FacialExpression(eyes:eyes, eyeBrows: expression.eyeBrows, mouth: expression.mouth)
         }
     }
 
