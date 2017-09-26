@@ -12,11 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var faceView: FaceView! {
         didSet {
+            let handler = #selector(FaceView.changeScale(recognizer:))
+            let pinchRecognizer = UIPinchGestureRecognizer(target: faceView, action: handler)
+            faceView.addGestureRecognizer(pinchRecognizer)
             updateUI()
         }
     }
 
-    var expression = FacialExpression(eyes: .Open, eyeBrows: .Relaxed, mouth: .Grin) {
+    var expression = FacialExpression(eyes: .Closed, eyeBrows: .Relaxed, mouth: .Smirk) {
         didSet {
             updateUI()
         }
