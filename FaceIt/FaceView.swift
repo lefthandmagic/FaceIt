@@ -89,11 +89,6 @@ class FaceView: UIView
         return eye
     }
 
-    private func positionEye(eye: EyeView, center: CGPoint) {
-        let size = skullRadius / Ratios.SkullRadiusToEyeRadius * 2
-        eye.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: size, height: size))
-        eye.center = center
-    }
 
     private func pathForEye(eye: Eye) -> UIBezierPath
     {
@@ -108,12 +103,6 @@ class FaceView: UIView
             path.lineWidth = lineWidth
             return path
         }
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        positionEye(eye: leftEye, center: getEyeCenter(eye: .Left))
-        positionEye(eye: rightEye, center: getEyeCenter(eye: .Right))
     }
 
 
